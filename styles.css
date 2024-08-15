@@ -1,3 +1,4 @@
+/* Estilo para o Cabeçalho */
 .header {
     background-color: #000;
     color: #fff;
@@ -41,6 +42,8 @@
 .cta-button:hover {
     background-color: #ffeb3b;
 }
+
+/* Estilo para a Seção de Resultados dos Alunos */
 .testimonials-section {
     background-color: #111;
     color: #fff;
@@ -55,6 +58,8 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilo para a Seção "Quem Será o Seu Mentor?" */
 .about-section {
     background-color: #000;
     color: #fff;
@@ -73,6 +78,8 @@
     font-size: 1.1em;
     line-height: 1.6;
 }
+
+/* Estilo para a Seção de Ofertas */
 .offer-section {
     background-color: #111;
     color: #fff;
@@ -118,6 +125,7 @@
     color: #fdd835;
 }
 
+/* Botões de Chamada para Ação nas Ofertas */
 .offer .cta-button {
     background-color: #fdd835;
     color: #000;
@@ -135,6 +143,9 @@
 .offer .cta-button:hover {
     background-color: #ffeb3b;
 }
+
+/* Certifique-se de fechar a regra com uma chave "}" */
+
 .faq-section {
     background-color: #fff;
     color: #000;
@@ -153,8 +164,14 @@
 
 .faq p {
     font-size: 1.1em;
-    display: none; /* Oculto por padrão, pode ser revelado com JS */
+    display: none; /* Esconde a resposta por padrão */
 }
+
+.faq p.visible {
+    display: block; /* Mostra a resposta quando a classe "visible" é adicionada */
+}
+
+/* Estilo para o Rodapé */
 .footer {
     background-color: #000;
     color: #fff;
@@ -172,18 +189,4 @@
 
 .footer a:hover {
     text-decoration: underline;
-}
-.faq p.visible {
-    display: block;
-}
-.faq p {
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.faq p.visible {
-    display: block;
-    max-height: 500px; /* Ajuste conforme necessário */
 }

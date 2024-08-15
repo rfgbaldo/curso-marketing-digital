@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Função de Rolagem Suave para o Botão CTA
     const ctaButton = document.querySelector('.cta-button');
-    const videoSection = document.querySelector('#video'); // Certifique-se de que o elemento alvo tenha o ID 'video'
+    const videoSection = document.querySelector('#offer');
 
     if (ctaButton && videoSection) {
         ctaButton.addEventListener('click', function(e) {
